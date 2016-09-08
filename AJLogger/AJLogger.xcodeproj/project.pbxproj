@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		305EC1231D66EAC00070C600 /* AJLoggerStatic */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 305EC1241D66EAC00070C600 /* Build configuration list for PBXAggregateTarget "AJLoggerStatic" */;
+			buildPhases = (
+				305EC1271D66EADF0070C600 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = AJLoggerStatic;
+			productName = AJLoggerBuild;
+		};
+		305EC1281D66F8A60070C600 /* AJLoggerFMK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 305EC1291D66F8A60070C600 /* Build configuration list for PBXAggregateTarget "AJLoggerFMK" */;
+			buildPhases = (
+				305EC12C1D66F8AB0070C600 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = AJLoggerFMK;
+			productName = AJLoggerFMK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		305EC1051D66DE8A0070C600 /* AJFileLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D6F1D5B3EFD00A38B49 /* AJFileLogger.cpp */; };
+		305EC1061D66DE8A0070C600 /* AJLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D701D5B3EFD00A38B49 /* AJLogger.cpp */; };
+		305EC1071D66DE8A0070C600 /* AJLoggerWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D721D5B3EFD00A38B49 /* AJLoggerWorker.cpp */; };
+		305EC1081D66DE8A0070C600 /* AJOCLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D741D5B3EFD00A38B49 /* AJOCLogger.mm */; };
+		305EC1091D66DE8A0070C600 /* AJSQLiteLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D751D5B3EFD00A38B49 /* AJSQLiteLogger.cpp */; };
+		305EC10A1D66DE8A0070C600 /* AJLogFilterChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 306D18901D616ACA00DC518B /* AJLogFilterChain.cpp */; };
+		305EC10B1D66DE8A0070C600 /* AJLogFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 306D188D1D61669A00DC518B /* AJLogFilter.cpp */; };
+		305EC10C1D66DE8A0070C600 /* AJUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D761D5B3EFD00A38B49 /* AJUtil.cpp */; };
+		305EC10D1D66DE8A0070C600 /* Backup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D791D5B3EFD00A38B49 /* Backup.cpp */; };
+		305EC10E1D66DE8A0070C600 /* Column.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D7B1D5B3EFD00A38B49 /* Column.cpp */; };
+		305EC10F1D66DE8A0070C600 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D7D1D5B3EFD00A38B49 /* Database.cpp */; };
+		305EC1101D66DE8A0070C600 /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D7F1D5B3EFD00A38B49 /* Exception.cpp */; };
+		305EC1111D66DE8A0070C600 /* Statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D821D5B3EFD00A38B49 /* Statement.cpp */; };
+		305EC1121D66DE8A0070C600 /* Transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D841D5B3EFD00A38B49 /* Transaction.cpp */; };
+		305EC1141D66DEAC0070C600 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 305EC1131D66DEAC0070C600 /* libsqlite3.0.tbd */; };
+		305EC1151D66DEE30070C600 /* AJOCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C33D731D5B3EFD00A38B49 /* AJOCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		305EC1161D66DEEF0070C600 /* AJLoggerPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C33D711D5B3EFD00A38B49 /* AJLoggerPlus.h */; };
+		305EC1191D66E0650070C600 /* AJLoggerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 305EC1171D66DF6C0070C600 /* AJLoggerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		306D188E1D61669A00DC518B /* AJLogFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 306D188D1D61669A00DC518B /* AJLogFilter.cpp */; };
+		306D18911D616ACA00DC518B /* AJLogFilterChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 306D18901D616ACA00DC518B /* AJLogFilterChain.cpp */; };
+		30C33D871D5B3EFD00A38B49 /* AJFileLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D6F1D5B3EFD00A38B49 /* AJFileLogger.cpp */; };
+		30C33D881D5B3EFD00A38B49 /* AJLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D701D5B3EFD00A38B49 /* AJLogger.cpp */; };
+		30C33D891D5B3EFD00A38B49 /* AJLoggerWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D721D5B3EFD00A38B49 /* AJLoggerWorker.cpp */; };
+		30C33D8A1D5B3EFD00A38B49 /* AJOCLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D741D5B3EFD00A38B49 /* AJOCLogger.mm */; };
+		30C33D8B1D5B3EFD00A38B49 /* AJSQLiteLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D751D5B3EFD00A38B49 /* AJSQLiteLogger.cpp */; };
+		30C33D8C1D5B3EFD00A38B49 /* AJUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D761D5B3EFD00A38B49 /* AJUtil.cpp */; };
+		30C33D8D1D5B3EFD00A38B49 /* Backup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D791D5B3EFD00A38B49 /* Backup.cpp */; };
+		30C33D8E1D5B3EFD00A38B49 /* Column.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D7B1D5B3EFD00A38B49 /* Column.cpp */; };
+		30C33D8F1D5B3EFD00A38B49 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D7D1D5B3EFD00A38B49 /* Database.cpp */; };
+		30C33D901D5B3EFD00A38B49 /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D7F1D5B3EFD00A38B49 /* Exception.cpp */; };
+		30C33D911D5B3EFD00A38B49 /* Statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D821D5B3EFD00A38B49 /* Statement.cpp */; };
+		30C33D921D5B3EFD00A38B49 /* Transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30C33D841D5B3EFD00A38B49 /* Transaction.cpp */; };
+		30C33D931D5B3F3600A38B49 /* AJLoggerPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30C33D711D5B3EFD00A38B49 /* AJLoggerPlus.h */; };
+		30C33D941D5B3F3600A38B49 /* AJOCLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30C33D731D5B3EFD00A38B49 /* AJOCLogger.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30C33D611D5B335E00A38B49 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				30C33D931D5B3F3600A38B49 /* AJLoggerPlus.h in CopyFiles */,
+				30C33D941D5B3F3600A38B49 /* AJOCLogger.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		305EC0FD1D66DE5B0070C600 /* AJLoggerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AJLoggerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		305EC1131D66DEAC0070C600 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		305EC1171D66DF6C0070C600 /* AJLoggerFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJLoggerFramework.h; sourceTree = "<group>"; };
+		305EC1181D66DF6C0070C600 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306D188D1D61669A00DC518B /* AJLogFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AJLogFilter.cpp; sourceTree = "<group>"; };
+		306D188F1D61689A00DC518B /* AJLoggerWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJLoggerWorker.h; sourceTree = "<group>"; };
+		306D18901D616ACA00DC518B /* AJLogFilterChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AJLogFilterChain.cpp; sourceTree = "<group>"; };
+		30C33D631D5B335E00A38B49 /* libAJLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAJLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C33D6F1D5B3EFD00A38B49 /* AJFileLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AJFileLogger.cpp; sourceTree = "<group>"; };
+		30C33D701D5B3EFD00A38B49 /* AJLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AJLogger.cpp; sourceTree = "<group>"; };
+		30C33D711D5B3EFD00A38B49 /* AJLoggerPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJLoggerPlus.h; sourceTree = "<group>"; };
+		30C33D721D5B3EFD00A38B49 /* AJLoggerWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AJLoggerWorker.cpp; sourceTree = "<group>"; };
+		30C33D731D5B3EFD00A38B49 /* AJOCLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJOCLogger.h; sourceTree = "<group>"; };
+		30C33D741D5B3EFD00A38B49 /* AJOCLogger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AJOCLogger.mm; sourceTree = "<group>"; };
+		30C33D751D5B3EFD00A38B49 /* AJSQLiteLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AJSQLiteLogger.cpp; sourceTree = "<group>"; };
+		30C33D761D5B3EFD00A38B49 /* AJUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AJUtil.cpp; sourceTree = "<group>"; };
+		30C33D781D5B3EFD00A38B49 /* Assertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assertion.h; sourceTree = "<group>"; };
+		30C33D791D5B3EFD00A38B49 /* Backup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Backup.cpp; sourceTree = "<group>"; };
+		30C33D7A1D5B3EFD00A38B49 /* Backup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Backup.h; sourceTree = "<group>"; };
+		30C33D7B1D5B3EFD00A38B49 /* Column.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Column.cpp; sourceTree = "<group>"; };
+		30C33D7C1D5B3EFD00A38B49 /* Column.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Column.h; sourceTree = "<group>"; };
+		30C33D7D1D5B3EFD00A38B49 /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Database.cpp; sourceTree = "<group>"; };
+		30C33D7E1D5B3EFD00A38B49 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		30C33D7F1D5B3EFD00A38B49 /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
+		30C33D801D5B3EFD00A38B49 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		30C33D811D5B3EFD00A38B49 /* SQLiteCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteCpp.h; sourceTree = "<group>"; };
+		30C33D821D5B3EFD00A38B49 /* Statement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Statement.cpp; sourceTree = "<group>"; };
+		30C33D831D5B3EFD00A38B49 /* Statement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statement.h; sourceTree = "<group>"; };
+		30C33D841D5B3EFD00A38B49 /* Transaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transaction.cpp; sourceTree = "<group>"; };
+		30C33D851D5B3EFD00A38B49 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		30C33D861D5B3EFD00A38B49 /* VariadicBind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariadicBind.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305EC0F91D66DE5B0070C600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305EC1141D66DEAC0070C600 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C33D601D5B335E00A38B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C33D5A1D5B335E00A38B49 = {
+			isa = PBXGroup;
+			children = (
+				305EC1131D66DEAC0070C600 /* libsqlite3.0.tbd */,
+				30C33D651D5B335E00A38B49 /* AJLogger */,
+				30C33D641D5B335E00A38B49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C33D641D5B335E00A38B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C33D631D5B335E00A38B49 /* libAJLogger.a */,
+				305EC0FD1D66DE5B0070C600 /* AJLoggerFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C33D651D5B335E00A38B49 /* AJLogger */ = {
+			isa = PBXGroup;
+			children = (
+				305EC1171D66DF6C0070C600 /* AJLoggerFramework.h */,
+				305EC1181D66DF6C0070C600 /* Info.plist */,
+				30C33D6F1D5B3EFD00A38B49 /* AJFileLogger.cpp */,
+				30C33D701D5B3EFD00A38B49 /* AJLogger.cpp */,
+				30C33D711D5B3EFD00A38B49 /* AJLoggerPlus.h */,
+				306D188F1D61689A00DC518B /* AJLoggerWorker.h */,
+				30C33D721D5B3EFD00A38B49 /* AJLoggerWorker.cpp */,
+				30C33D731D5B3EFD00A38B49 /* AJOCLogger.h */,
+				30C33D741D5B3EFD00A38B49 /* AJOCLogger.mm */,
+				30C33D751D5B3EFD00A38B49 /* AJSQLiteLogger.cpp */,
+				306D18901D616ACA00DC518B /* AJLogFilterChain.cpp */,
+				306D188D1D61669A00DC518B /* AJLogFilter.cpp */,
+				30C33D761D5B3EFD00A38B49 /* AJUtil.cpp */,
+				30C33D771D5B3EFD00A38B49 /* SQLiteCpp */,
+			);
+			path = AJLogger;
+			sourceTree = "<group>";
+		};
+		30C33D771D5B3EFD00A38B49 /* SQLiteCpp */ = {
+			isa = PBXGroup;
+			children = (
+				30C33D781D5B3EFD00A38B49 /* Assertion.h */,
+				30C33D791D5B3EFD00A38B49 /* Backup.cpp */,
+				30C33D7A1D5B3EFD00A38B49 /* Backup.h */,
+				30C33D7B1D5B3EFD00A38B49 /* Column.cpp */,
+				30C33D7C1D5B3EFD00A38B49 /* Column.h */,
+				30C33D7D1D5B3EFD00A38B49 /* Database.cpp */,
+				30C33D7E1D5B3EFD00A38B49 /* Database.h */,
+				30C33D7F1D5B3EFD00A38B49 /* Exception.cpp */,
+				30C33D801D5B3EFD00A38B49 /* Exception.h */,
+				30C33D811D5B3EFD00A38B49 /* SQLiteCpp.h */,
+				30C33D821D5B3EFD00A38B49 /* Statement.cpp */,
+				30C33D831D5B3EFD00A38B49 /* Statement.h */,
+				30C33D841D5B3EFD00A38B49 /* Transaction.cpp */,
+				30C33D851D5B3EFD00A38B49 /* Transaction.h */,
+				30C33D861D5B3EFD00A38B49 /* VariadicBind.h */,
+			);
+			path = SQLiteCpp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		305EC0FA1D66DE5B0070C600 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305EC1151D66DEE30070C600 /* AJOCLogger.h in Headers */,
+				305EC1191D66E0650070C600 /* AJLoggerFramework.h in Headers */,
+				305EC1161D66DEEF0070C600 /* AJLoggerPlus.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		305EC0FC1D66DE5B0070C600 /* AJLoggerFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305EC1041D66DE5B0070C600 /* Build configuration list for PBXNativeTarget "AJLoggerFramework" */;
+			buildPhases = (
+				305EC0F81D66DE5B0070C600 /* Sources */,
+				305EC0F91D66DE5B0070C600 /* Frameworks */,
+				305EC0FA1D66DE5B0070C600 /* Headers */,
+				305EC0FB1D66DE5B0070C600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AJLoggerFramework;
+			productName = AJLoggerFramework;
+			productReference = 305EC0FD1D66DE5B0070C600 /* AJLoggerFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30C33D621D5B335E00A38B49 /* AJLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C33D6C1D5B335E00A38B49 /* Build configuration list for PBXNativeTarget "AJLogger" */;
+			buildPhases = (
+				30C33D5F1D5B335E00A38B49 /* Sources */,
+				30C33D601D5B335E00A38B49 /* Frameworks */,
+				30C33D611D5B335E00A38B49 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AJLogger;
+			productName = AJLogger;
+			productReference = 30C33D631D5B335E00A38B49 /* libAJLogger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C33D5B1D5B335E00A38B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = BruceAi;
+				TargetAttributes = {
+					305EC0FC1D66DE5B0070C600 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					305EC1231D66EAC00070C600 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					305EC1281D66F8A60070C600 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					30C33D621D5B335E00A38B49 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 30C33D5E1D5B335E00A38B49 /* Build configuration list for PBXProject "AJLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30C33D5A1D5B335E00A38B49;
+			productRefGroup = 30C33D641D5B335E00A38B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C33D621D5B335E00A38B49 /* AJLogger */,
+				305EC0FC1D66DE5B0070C600 /* AJLoggerFramework */,
+				305EC1231D66EAC00070C600 /* AJLoggerStatic */,
+				305EC1281D66F8A60070C600 /* AJLoggerFMK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305EC0FB1D66DE5B0070C600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		305EC1271D66EADF0070C600 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LIB_NAME=\"AJLogger\"\nINSTALL_DIR=${SRCROOT}/Library\nWRK_DIR=${SRCROOT}/build\nDEVICE_DIR=${WRK_DIR}/${CONFIGURATION}-iphoneos\nSIMULATOR_DIR=${WRK_DIR}/${CONFIGURATION}-iphonesimulator\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir \"${INSTALL_DIR}\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target ${LIB_NAME} -sdk iphoneos clean build\nxcodebuild -configuration \"${CONFIGURATION}\" -target ${LIB_NAME} -sdk iphonesimulator clean build\ncp -r \"${DEVICE_DIR}/include\" \"${INSTALL_DIR}/include\"\nlipo -create \"${DEVICE_DIR}/lib${LIB_NAME}.a\" \"${SIMULATOR_DIR}/lib${LIB_NAME}.a\" -output \"${INSTALL_DIR}/lib${LIB_NAME}.a\"\nrm -rf \"${WRK_DIR}\"";
+		};
+		305EC12C1D66F8AB0070C600 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=\"AJLoggerFramework\"\nINSTALL_DIR=${SRCROOT}/Framework\nWRK_DIR=${SRCROOT}/build\nDEVICE_DIR=${WRK_DIR}/${CONFIGURATION}-iphoneos\nSIMULATOR_DIR=${WRK_DIR}/${CONFIGURATION}-iphonesimulator\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir \"${INSTALL_DIR}\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target ${FMK_NAME} -sdk iphoneos clean build\nxcodebuild -configuration \"${CONFIGURATION}\" -target ${FMK_NAME} -sdk iphonesimulator clean build\ncp -r \"${DEVICE_DIR}/${FMK_NAME}.framework\" \"${INSTALL_DIR}/\"\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}.framework/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}.framework/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}.framework/${FMK_NAME}\"\nrm -rf \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305EC0F81D66DE5B0070C600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305EC1051D66DE8A0070C600 /* AJFileLogger.cpp in Sources */,
+				305EC1061D66DE8A0070C600 /* AJLogger.cpp in Sources */,
+				305EC1071D66DE8A0070C600 /* AJLoggerWorker.cpp in Sources */,
+				305EC1081D66DE8A0070C600 /* AJOCLogger.mm in Sources */,
+				305EC1091D66DE8A0070C600 /* AJSQLiteLogger.cpp in Sources */,
+				305EC10A1D66DE8A0070C600 /* AJLogFilterChain.cpp in Sources */,
+				305EC10B1D66DE8A0070C600 /* AJLogFilter.cpp in Sources */,
+				305EC10C1D66DE8A0070C600 /* AJUtil.cpp in Sources */,
+				305EC10D1D66DE8A0070C600 /* Backup.cpp in Sources */,
+				305EC10E1D66DE8A0070C600 /* Column.cpp in Sources */,
+				305EC10F1D66DE8A0070C600 /* Database.cpp in Sources */,
+				305EC1101D66DE8A0070C600 /* Exception.cpp in Sources */,
+				305EC1111D66DE8A0070C600 /* Statement.cpp in Sources */,
+				305EC1121D66DE8A0070C600 /* Transaction.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C33D5F1D5B335E00A38B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C33D8C1D5B3EFD00A38B49 /* AJUtil.cpp in Sources */,
+				30C33D8E1D5B3EFD00A38B49 /* Column.cpp in Sources */,
+				30C33D8D1D5B3EFD00A38B49 /* Backup.cpp in Sources */,
+				30C33D901D5B3EFD00A38B49 /* Exception.cpp in Sources */,
+				306D188E1D61669A00DC518B /* AJLogFilter.cpp in Sources */,
+				30C33D891D5B3EFD00A38B49 /* AJLoggerWorker.cpp in Sources */,
+				30C33D8F1D5B3EFD00A38B49 /* Database.cpp in Sources */,
+				306D18911D616ACA00DC518B /* AJLogFilterChain.cpp in Sources */,
+				30C33D921D5B3EFD00A38B49 /* Transaction.cpp in Sources */,
+				30C33D8B1D5B3EFD00A38B49 /* AJSQLiteLogger.cpp in Sources */,
+				30C33D911D5B3EFD00A38B49 /* Statement.cpp in Sources */,
+				30C33D881D5B3EFD00A38B49 /* AJLogger.cpp in Sources */,
+				30C33D8A1D5B3EFD00A38B49 /* AJOCLogger.mm in Sources */,
+				30C33D871D5B3EFD00A38B49 /* AJFileLogger.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		305EC1021D66DE5B0070C600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/AJLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = aiijim.AJLoggerFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		305EC1031D66DE5B0070C600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/AJLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aiijim.AJLoggerFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		305EC1251D66EAC00070C600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		305EC1261D66EAC00070C600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		305EC12A1D66F8A60070C600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		305EC12B1D66F8A60070C600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		30C33D6A1D5B335E00A38B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30C33D6B1D5B335E00A38B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C33D6D1D5B335E00A38B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30C33D6E1D5B335E00A38B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305EC1041D66DE5B0070C600 /* Build configuration list for PBXNativeTarget "AJLoggerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305EC1021D66DE5B0070C600 /* Debug */,
+				305EC1031D66DE5B0070C600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305EC1241D66EAC00070C600 /* Build configuration list for PBXAggregateTarget "AJLoggerStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305EC1251D66EAC00070C600 /* Debug */,
+				305EC1261D66EAC00070C600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		305EC1291D66F8A60070C600 /* Build configuration list for PBXAggregateTarget "AJLoggerFMK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305EC12A1D66F8A60070C600 /* Debug */,
+				305EC12B1D66F8A60070C600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30C33D5E1D5B335E00A38B49 /* Build configuration list for PBXProject "AJLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C33D6A1D5B335E00A38B49 /* Debug */,
+				30C33D6B1D5B335E00A38B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C33D6C1D5B335E00A38B49 /* Build configuration list for PBXNativeTarget "AJLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C33D6D1D5B335E00A38B49 /* Debug */,
+				30C33D6E1D5B335E00A38B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30C33D5B1D5B335E00A38B49 /* Project object */;
+}
