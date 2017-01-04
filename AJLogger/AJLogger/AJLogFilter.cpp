@@ -41,7 +41,7 @@ namespace AJLoggerPlus
             }
         }
 
-        return !(m_excludeMode ^ isFind);
+        return !(m_excludeMode ^ isFind) ? true : filterChain->doFilter(ptMsg, filterChain);
     }
     
     void AJLogModuleFilter::setModuleFilter(std::vector<std::string> &mdls)
